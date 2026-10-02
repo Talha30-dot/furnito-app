@@ -1,67 +1,55 @@
-# Furnito App
+# Furnito
 
-Hafta 15 ödevi için hazırlanmış React Native / Expo Router mobilya e-ticaret uygulaması.
+A mobile furniture shopping interface built with **React Native**, **Expo Router**, **TypeScript**, and **NativeWind**.
 
-## Kullanılan Yapılar
+The project focuses on reusable UI components, tab/stack navigation, dynamic product routes, product discovery, favorites, and a shopping-bag flow.
 
-- Expo Router Tabs
-- Stack Navigation
-- Dynamic Route: `app/product/[id].tsx`
-- FlatList
-- Custom Header
-- NativeWind
+## Preview
+
+| Home | Product Detail | Favorites |
+| --- | --- | --- |
+| ![Home](assets/screenshots/home.png) | ![Product Detail](assets/screenshots/detail.png) | ![Favorites](assets/screenshots/favorites.png) |
+
+## Tech Stack
+
+- React Native
+- Expo / Expo Router
 - TypeScript
+- NativeWind
+- React Native FlatList
 
-## Ekranlar
+## Features
 
-- Home
-- Favorites
-- Discover
-- Bag
-- Profile
-- Product Detail
+- Tab-based mobile navigation
+- Product listing and category filtering UI
+- Dynamic product detail routes
+- Favorites screen
+- Shopping bag screen
+- Reusable product, banner, category, and gallery components
+- Responsive mobile-first interface
 
-## Çalıştırma
+## Project Structure
+
+```text
+app/
+  (tabs)/
+  product/
+components/
+data/
+assets/
+```
+
+## Getting Started
 
 ```bash
+git clone https://github.com/Talha30-dot/furnito-app.git
+cd furnito-app
 npm install
-npx expo start -c
+npm start
 ```
 
-Telefonla çalıştırmak için Expo Go uygulamasından terminalde çıkan QR kodu okut.
+Then open the project with Expo Go or run it on Android, iOS, or web using the available npm scripts.
 
-## Klasör Yapısı
+## Purpose
 
-```txt
-app/
-  _layout.tsx
-  (tabs)/
-    _layout.tsx
-    index.tsx
-    favorites.tsx
-    discover.tsx
-    bag.tsx
-    profile.tsx
-  product/
-    [id].tsx
-components/
-  PromoBanner.tsx
-  HeroCard.tsx
-  CategoryTabs.tsx
-  ProductCard.tsx
-  FavoriteCard.tsx
-  ThumbnailGallery.tsx
-data/
-  products.ts
-```
-
-## Screenshotlar
-
-### Home
-![Home](assets/screenshots/home.png)
-
-### Product Detail
-![Product Detail](assets/screenshots/detail.png)
-
-### Favorites
-![Favorites](assets/screenshots/favorites.png)
+Furnito was developed as a React Native practice project to strengthen mobile UI development, component architecture, navigation, and TypeScript skills.
